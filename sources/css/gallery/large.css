@@ -1,0 +1,26 @@
+/* 64 em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem){
+    
+    header ul li:nth-child(1){
+        font-size: 2.5rem;
+    }
+    header ul li:nth-child(2){
+        font-size: 1rem;
+    }
+
+    /* Main Page */
+
+    main .container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main .container figure img:hover{
+        box-shadow: 0 0 30px 5px rgba(102, 102, 0, 0.8);
+        
+    }
+    
+
+
+
+
+} /* end large */

@@ -1,0 +1,74 @@
+/* 64 em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem){
+    
+    header ul li:nth-child(1){
+        font-size: 2.5rem;
+    }
+    header ul li:nth-child(2){
+        font-size: 1rem;
+    }
+
+    /* Main Page */
+
+
+    /* Hero pic*/
+
+    main .heroBox {
+        max-width: 70%;
+    }
+
+    /*Town Section */
+
+    main .townbox .card{
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: .5rem;
+
+    }
+
+    main .townbox .card article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    article:nth-child(odd) img{
+        grid-row: 2
+
+    }
+    article:nth-child(odd) .cardData{
+        grid-row: 1;
+
+    }
+
+
+    /* Article Section */
+
+    main .articleBox {
+        width: 90%;
+        
+    }
+
+
+    /* 5-Day Forecast Section */
+
+    .forecastBox {
+        max-width: 700px;
+    }
+
+    main .articleBox img {
+        max-width: 280px;
+    }
+
+    /* Map Section */
+
+    .locationContent {
+        max-width: 870px;
+    }
+    
+
+
+
+
+} /* end large */

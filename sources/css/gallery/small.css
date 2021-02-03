@@ -1,0 +1,224 @@
+
+/***************************************************************
+
+FONTS
+font-family: 'Cinzel', serif;
+font-family: 'Finger Paint', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Merriweather', serif;
+*/
+
+/*
+COLORS
+Primary - #666600 - rgb(102,102,0) - dark yellow - background
+Primary - #F5F5DC - rgb(245,245,220) - beige - background
+Primary - #333333 - rgb(51,51,51) - lighter black - paragraph font color
+Secondary - #00BFFF - rgb(0, 191, 255) - light sky blue - for text in logo
+Secondary - #666600 - rgb(102, 102, 0) - yellow - for footer contrast
+
+********************************************************************/
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F5F5DC;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Banner CSS */
+
+.banner {
+    background-color: rgb(255, 255, 0, .5);
+    display: none;
+    font-size: .8rem;
+    padding: 3px;
+}
+
+.banner p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*Header CSS */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #666600;
+}
+
+header picture {
+    max-width: 80px;
+}
+
+header img {
+    max-width: 100%;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+header ul li:nth-child(1) {
+    font-family: 'Finger Paint', cursive;
+    font-size: 1.6rem;
+}
+
+header ul li:nth-child(1) #weatherText {
+    color: #00BFFF;
+}
+
+header ul li:nth-child(2) {
+    font-size: .8rem;
+}
+
+
+/*Navigation CSS */
+
+nav {
+    background-color: #BDB76B;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li:first-child {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: .8rem;
+    font-weight: 600;
+
+}
+
+#menuText {
+    font-size: 1rem;
+
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #333333;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: 400;
+
+}
+
+
+/*Main Page CSS */
+
+main{
+    color: rgb(51,51,51);
+}
+
+main, main .gallery{
+    margin: 0px;
+}
+
+h1, h2, h3{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+main .container{
+    margin: 0 3% 30px 3%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+}
+
+main figure{
+    margin: 0;
+    width: 100%;
+}
+
+main figure img{
+    width: 100%;
+    
+}
+
+main figure figcaption{
+    font-size: .85rem;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+
+
+footer {
+    width: 100%;
+    background-color: #666600;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+footer ul li {
+    padding: 5px;
+}
+
+footer ul li:nth-child(2) {
+    color: yellow;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

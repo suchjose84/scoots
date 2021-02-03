@@ -1,0 +1,20 @@
+
+h1{
+    text-align: center;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+img{
+    border: solid gray 1px;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 400px;    
+    
+
+}

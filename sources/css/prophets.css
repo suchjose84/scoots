@@ -1,0 +1,76 @@
+
+
+main .cards {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: .5rem;
+}
+
+section {
+    border: rgb(72,61,139, .6)solid 1px;
+    display:block;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto 5px auto;
+    padding-bottom: .5rem;
+    background-color: rgb(72,61,139, .3);
+
+}
+
+section h2, h1{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: rgb(72,61,139);
+}
+
+section p {
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+img {
+    display: block;
+    width: 40%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .9);
+    margin: 0 auto;
+}
+
+.cards {
+    box-shadow: 0 0 20px rgba(0, 0, 0, .9);
+    margin: 0;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+    font-family: 'poppins', sans-serif;
+    padding: 1rem;
+}
+
+
+
+@media only screen and (min-width: 35em) {
+
+    main .cards {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    
+    }
+
+
+
+
+}
+
+
+@media only screen and (min-width: 64rem){
+
+    main .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+
+}

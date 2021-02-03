@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/towns/small.css">
+    <link rel="stylesheet" href="css/towns/medium.css">
+    <link rel="stylesheet" href="css/towns/large.css">
+    <title>Preston | Panahon Weather</title>
+
+</head>
+
+<body>
+
+    <section class="banner">
+        <h6>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h6>
+    </section>
+
+    <header>
+        <div>
+            <a href="index.html"><img src="images/brand-icon.png" alt="sitemap img"></a>
+        </div>
+        <ul>
+            <li class="logoText"><a href="#">Panahon <span id="weatherText">WEATHER</span></a></li>
+            <li class="logoCatchPhrase"><a href="#">Rain, rain, go away!</a></li>
+        </ul>
+                                                       
+    </header>
+
+    <nav class="clearfix">
+        <ul class="navigation">
+            <li><a class="toggleMenu" href="#">&#9776; <span id="menuText">Menu</span></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li><a href="fishHaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Preston Idaho</h1>
+
+        <section class="heroBox">
+
+            <picture class="heroImage">
+
+                <source srcset="images/heroImage500.jpg" media="(max-width: 500px)">
+                <source srcset="images/heroImage800.jpg" media="(max-width: 800px)">
+                <source srcset="images/heroImage1100.jpg" media="(min-width: 801px)">
+                <img src="images/lazyPlaceholderImage.png" alt="cactusImage">
+
+
+
+            </picture>
+
+            <div class="summaryBox">
+                <p>Weather Summary</p>
+                <table>
+                    <tr>
+                        <td class="firstRow">Summary:</td>
+                        <td class="secondRow"><span id="description"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstRow">Max-Temp:</td>
+                        <td class="secondRow"><span id="highValue"></span>&#8457;</td>
+                    </tr>
+                    <tr>
+                        <td class="firstRow">Wind Chill:</td>
+                        <td class="secondRow"><span id="windChillValue"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstRow">Humidity:</td>
+                        <td class="secondRow"><span id="humidity"></span>%</td>
+                    </tr>
+                    <tr>
+                        <td class="firstRow">Wind Speed:</td>
+                        <td class="secondRow"><span id="windSpeedValue"></span>mph</td>
+
+                    </tr>
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <section class="weatherSection">
+            <h2>5-Day Forecast</h2>
+            <div class="forecastBox">
+                <div class="weatherCard">
+                    <p class="firstP"><span id="day1"></span></p>
+                    <img id="icon1" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
+                    <p class="secondP"><span id=temp1></span>&#8457;</p>
+                </div>
+                <div class="weatherCard">
+                    <p class="firstP"><span id="day2"></span></p>
+                    <img id="icon2" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
+                    <p class="secondP"><span id=temp2></span>&#8457;</p>
+                </div>
+                <div class="weatherCard">
+                    <p class="firstP"><span id="day3"></span></p>
+                    <img id="icon3" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
+                    <p class="secondP"><span id=temp3></span>&#8457;</p>
+                </div>
+                <div class="weatherCard">
+                    <p class="firstP"><span id="day4"></span></p>
+                    <img id="icon4" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
+                    <p class="secondP"><span id=temp4></span>&#8457;</p>
+                </div>
+                <div class="weatherCard">
+                    <p class="firstP"><span id="day5"></span></p>
+                    <img id="icon5" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
+                    <p class="secondP"><span id=temp5></span>&#8457;</p>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="articleBox">
+            <div class="articleContents">
+                <img src="images/lazyPlaceholderImage.png" data-src="images/PRarticle500.jpg" alt="articlePic">
+                <h2>Founders Day Fresco</h2>
+                <p class="author">Featured article by Janica Juarez</p>
+                <p class="hasDropCap">I was recently reflecting upon the founders day event held at Foundation Park each
+                    year. I have been taking the festival for granted and have not been properly engaging in
+                    perhaps the most popular community event of the year. In response, I contacted Ms. Sharon
+                    via Email and expressed my desire to serve on the event committee. Well, you guessed it,
+                    the phone rings immediately and she promptly asks me to be the event community chair.
+                    Literally, good grief! My appreciation for the years of dedicated, generous service of
+                    volunteers and sponsors has escalated to what I thought I could feel for such a thing and
+                    ...<br>
+                    <a id="nextPageLink" href="https://www.google.com/" target="_blank">continue to full article</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="eventBox">
+            <h2>Annual Events</h2>
+            <div class="card"></div>
+        </section>
+
+        <section class="locationSection">
+
+            <div class="mapBox">
+                <img src="images/lazyPlaceholderImage.png" data-src="images/prestonMap.jpg" alt="prestonMapImage">
+
+            </div>
+            <div class="addressBox">
+                <div class="address">
+                    <h5>Panahon Weather</h5>
+                    <p><img src="images/lazyPlaceholderImage.png" data-src="images/locationIcon9.png" alt="locationIcon"> 30 N 1st E</p>
+                    <p>Preston, ID 83263</p>
+                    <br>
+                    <p><span id="phoneIcon">&#9742;</span> (999)-999-9999</p>
+                    <p><span id="envelopeIcon">&#9993;</span> pwmail@panahonweather.com</p>
+                    <br>
+                    <div class="social">
+                        <a href="https://facebook.com" target="_blank"><img src="images/lazyPlaceholderImage.png" data-src="images/fbIcon.png" alt="fbIcon"></a>
+                        <a href="https://pinterest.com" target="_blank"><img src="images/lazyPlaceholderImage.png" data-src="images/pinterestIcon.png"
+                                alt="pinterestIcon"></a>
+                        <a href="https://twitter.com" target="_blank"><img src="images/lazyPlaceholderImage.png" data-src="images/twitterIcon.png"
+                                alt="twitterIcon"></a>
+                        <a href="https://hangouts.google.com/" target="_blank"><img src="images/lazyPlaceholderImage.png" data-src="images/hangoutsIcon.png"
+                                alt="hangoutsIcon"></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <ul>
+            <li>&#169;<span id="currentYear"></span>| | Naga City, Phil | BYU - I Online Learning</li>
+            <li>Last Updated: <span id="dateTime"></span></li>
+        </ul>
+    </footer>
+
+    <script src="script/index.js"></script>
+    <script class=responsive src="script/main.js"></script>
+    <script src="script/displayBanner.js"></script>
+    <script src="script/PRweatherapi.js"></script>
+    <script src="script/windChill.js"></script>
+    <script src="script/lazyload.js"></script>
+
+    <!--Google Webfont-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Finger Paint', 'Roboto Slab', 'Open Sans', 'Cinzel', 'Poppins', 'Merriweather']
+            }
+        });
+    </script>
+
+</body>
+
+</html>

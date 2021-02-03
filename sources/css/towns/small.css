@@ -1,0 +1,457 @@
+/***************************************************************
+
+FONTS
+font-family: 'Cinzel', serif;
+font-family: 'Finger Paint', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Merriweather', serif;
+*/
+
+/*
+COLORS
+Primary - #666600 - rgb(102,102,0) - dark yellow - background
+Primary - #F5F5DC - rgb(245,245,220) - beige - background
+Primary - #333333 - rgb(51,51,51) - lighter black - paragraph font color
+Secondary - #00BFFF - rgb(0, 191, 255) - light sky blue - for text in logo
+Secondary - #bdb76b - rgb(189, 183, 107) - nav color
+Secondary - #666600 - rgb(255,255,0) - yellow - for footer contrast
+
+********************************************************************/
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #F5F5DC;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Banner CSS */
+
+.banner {
+    background-color: rgb(255, 255, 0, .5);
+    display: none;
+    font-size: .8rem;
+    padding: 3px;
+}
+
+.banner p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/*Header CSS */
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #666600;
+}
+
+header div {
+    max-width: 80px;
+}
+
+header img {
+    max-width: 100%;
+}
+
+header ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+header ul li:nth-child(1) {
+    font-family: 'Finger Paint', cursive;
+    font-size: 1.6rem;
+}
+
+header ul li:nth-child(1) #weatherText {
+    color: #00BFFF;
+}
+
+header ul li:nth-child(2) {
+    font-size: .8rem;
+}
+
+
+/*Navigation CSS */
+
+nav {
+    background-color: #BDB76B;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li:first-child {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: .8rem;
+    font-weight: 600;
+
+}
+
+#menuText {
+    font-size: 1rem;
+
+}
+
+.navigation li {
+    display: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #333333;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: 400;
+
+}
+
+
+/*Main Page CSS */
+
+main h2,
+h3,
+h1 {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+main {
+    padding: 0 3px;
+}
+
+/*Hero Pic and Summary Section */
+
+main .heroBox {
+    display: block;
+    position: relative;
+    border: solid 1px rgba(0, 0, 0, 0.6);
+    width: 96%;
+    margin: 0 auto;
+
+}
+
+main .heroImage img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    opacity: .8;
+
+}
+
+
+main .summaryBox {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    background: radial-gradient(circle, rgba(255, 255, 0, .6) 0%, rgba(102, 102, 0, .6) 100%);
+    padding: 10px;
+    color: #333333;
+    font-weight: 600;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main .summaryBox p {
+    font-size: .8rem;
+    border-bottom: 2px solid;
+    padding: 0;
+    margin: 0;
+}
+
+main .summaryBox table {
+    font-size: .7rem;
+    align-self: flex-start;
+}
+
+table .firstRow {
+    text-align: right;
+}
+
+table .secondRow {
+    text-align: left;
+    color: purple;
+}
+
+
+/*Forecast Section */
+
+main .weatherSection {
+    display: none;
+}
+
+.forecastBox {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.weatherCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.weatherCard img {
+    width: 60%;
+    margin: 0 auto;
+    
+}
+
+.weatherCard p {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    background-color: #666600;
+}
+
+.weatherCard .secondP {
+    border-bottom: none;
+    background-color: transparent;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.weatherCard .firstP {
+    color: white;
+}
+
+
+/*Article Section */
+
+main .articleBox {
+    display: block;
+    width: 96%;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 1.5rem auto 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+main .articleBox .articleContents {
+    margin: 1.2rem;
+
+}
+
+main .articleBox img {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+main .articleBox h2 {
+    text-align: left;
+    font-family: 'Merriweather', serif;
+}
+
+.hasDropCap:first-letter {
+    font-size: 2.5rem;
+    float: left;
+    margin: 0.21em 0.22em 0.1em 0;
+    line-height: .65em;
+    font-family: 'Merriweather', serif;
+
+}
+
+main .author {
+    font-size: .8rem;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.8)
+}
+
+main .hasDropCap a {
+    color: blue;
+}
+
+main .hasDropCap a:hover {
+    color: green;
+}
+
+/* Event Box */
+
+main .eventBox {
+    display: block;
+    margin: 1.5rem auto;
+    width: 96%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+main .eventBox .card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main .eventBox .card article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5px;
+    width: 94%;
+    background-color: rgba(255,255, 0, .4);
+    border: solid 1px rgba(55, 55, 55, .5);
+    margin: .5rem auto;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+main .eventBox .card p {
+    width: 70%;
+    min-width: 100px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 500;
+    margin: auto;
+    border-style:ridge;
+    border-color: white;    
+    border-width: 3px;
+    background-color: rgba(55,27,7,.8);
+    border-radius: 10px;
+    padding: 2%;
+    
+}
+
+main .eventBox .card img {
+    display: block;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    border: 2px rgba(245, 245, 220, .8);
+    border-style: inset;
+}
+
+
+/* Address Section */
+
+.locationSection {
+    background-color: rgb(102, 102, 0, .3);
+    border: 1px solid rgb(102, 102, 0, .4);
+    width: 96%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.locationSection .mapBox img {
+    display: none;
+}
+
+.locationSection .addressBox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.locationSection .addressBox h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.locationSection .addressBox p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.locationSection .addressBox img {
+    max-height: 1.1rem;
+}
+
+.locationSection .addressbox picture img {
+    max-width: 1.5rem;
+
+}
+
+.locationSection .address {
+    display: block;
+    margin: auto;
+
+}
+
+footer {
+    width: 100%;
+    background-color: #666600;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+    padding: 5px 0;
+    margin: 0 auto;
+}
+
+footer ul li {
+    padding: 5px;
+}
+
+footer ul li:nth-child(2) {
+    color: yellow;
+}
+
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

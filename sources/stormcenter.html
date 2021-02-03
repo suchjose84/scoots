@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/stormcenter/small.css">
+    <link rel="stylesheet" href="css/stormcenter/medium.css">
+    <link rel="stylesheet" href="css/stormcenter/large.css">
+    <title>Storm Center | Panahon Weather</title>
+
+</head>
+
+<body>
+
+    <section class="banner">
+        <h6>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h6>
+    </section>
+
+    <header>
+        <picture><img src="images/brand-icon.png" alt="sitemap img"></picture>
+        <ul>
+            <li class="logoText"><a href="#">Panahon <span id="weatherText">WEATHER</span></a></li>
+            <li class="logoCatchPhrase"><a href="#">Rain, rain, go away!</a></li>
+        </ul>
+
+
+
+    </header>
+
+    <nav class="clearfix">
+        <ul class="navigation">
+            <li><a class="toggleMenu" href="#">&#9776; <span id="menuText">Menu</span></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li><a href="fishHaven.html">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <h1>Storm Report</h1>
+        <h4>Alerting the NWS to local weather</h4>
+
+        <form method="get" action="stormresponse.html">
+
+            <fieldset>
+                <legend>Reporter's Information</legend>
+                <div class="inputContainer">
+                    <label class="top">Full Name* <input type="text" name="fullname" required
+                            pattern="[a-zA-Z\s]{5,}"></label>
+                    <label class="top">Email <input type="email" name="email" placeholder="someone@mail.com"></label>
+                    <label class="top">Phone* <input type="tel" name="phone" required></label>
+                    <label class="top">Zip Code* <input type="number" name="zip" required></label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Storm Details</legend>
+                <div class="inputContainer">
+                    <label class="top">Storm Date <input type="date" name="date"></label>
+                    <label class="top">Storm Type
+                        <input name="stormType" list="stormType" placeholder="Select Type">
+                        <datalist id="stormType">
+                            <option value="">Select</option>
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label>
+
+
+                    <p>Storm Severity</p>
+                    <label class="flexy">
+                            <input type="range" name="stormSeverity" id="rating" value="5" min="1" max="10" step="1"
+                                list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingValue">5</span>
+                    </label>
+
+                    <datalist id="tickmarks">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+
+                    </datalist>
+
+                    <label class="top">Storm Region
+                        <select name="stormRegion">
+                            <option value="">Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="preston">Soda Springs</option>
+                            <option value="preston">Fish Haven</option>
+                        </select>
+
+                    </label>
+
+                    <div>User In-danger Level?
+
+                        <label class="sbs"><input type="radio" name="dangerLevel" value="no"> No</label>
+                        <label class="sbs"><input type="radio" name="dangerLevel" value="maybe"> Maybe</label>
+                        <label class="sbs"><input type="radio" name="dangerLevel" value="yes"> Yes</label>
+
+                    </div>
+
+                    <label class="top" for="area">Additional Info
+                        <textarea rows="10" cols="50" name="comment" id="area"></textarea>
+                    </label>
+                </div>
+
+            </fieldset>
+
+            <input type="submit" value="Submit Report" class="submitBtn">
+
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        <ul>
+            <li>&#169;<span id="currentYear"></span>| | Naga City, Phil | BYU - I Online Learning</li>
+            <li>Last Updated: <span id="dateTime"></span></li>
+        </ul>
+    </footer>
+
+    <script src="script/index.js"></script>
+    <script class=responsive src="script/main.js"></script>
+    <script src="script/displayBanner.js"></script>
+    <script src="script/forms.js"></script>
+    <script src="script/lazyload.js"></script>
+
+    <!--Google Webfont-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Finger Paint', 'Roboto Slab', 'Open Sans', 'Cinzel', 'Poppins', 'Merriweather']
+            }
+        });
+    </script>
+
+</body>
+
+</html>

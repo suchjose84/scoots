@@ -1,0 +1,23 @@
+/* 64 em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem){
+    
+    header ul li:nth-child(1){
+        font-size: 2.5rem;
+    }
+    header ul li:nth-child(2){
+        font-size: 1rem;
+    }
+
+    /* Main Page */
+
+    main form fieldset{
+        width: 60%;
+        max-width: 30rem; 
+        
+    }
+    
+
+
+
+
+} /* end large */

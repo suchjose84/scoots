@@ -1,0 +1,130 @@
+@media only screen and (min-width: 35em) {
+
+
+    .banner {
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .banner p{
+        margin: 0;
+        padding: 0;
+    }
+
+    header ul li:nth-child(1) {
+        font-size: 2.2rem;
+    }
+
+    header ul li:nth-child(2) {
+        font-size: .9rem;
+    }
+
+    header picture {
+        max-width: 100px;
+
+    }
+
+    .navigation {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .8rem 1rem;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    /*Town Section */
+
+    main .townbox{
+        width: 96%;
+    }
+
+    main .townbox .card article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: .5rem;
+
+    }
+
+    article:nth-child(odd) img{
+        grid-column: 1;
+        grid-row: 1
+
+    }
+    article:nth-child(odd) .cardData{
+        grid-column: 2;
+        grid-row: 1;
+
+    }
+
+
+    /* Article Section */
+
+    main .townbox{
+        width: 80%;
+    
+    }
+
+    main .articleBox {
+        width: 76%;
+    }
+
+    main .articleBox h3 {
+        margin-top: 0px;
+    }
+
+    main .articleBox img {
+        float: right;
+        max-width: 230px;
+    }
+
+
+    /* Map Section */
+
+    .locationSection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        margin: 0 auto;
+    }
+    .locationSection .mapBox{
+        grid-column: 1 / 2;
+    }
+
+    .locationSection .addressBox{
+        grid-column: 2 / 3;
+    }
+
+
+    .locationSection .mapBox img {
+        display: block;
+        margin: auto;
+        width: 80%;
+        border: 1px solid rgb(51, 51, 51, .5);
+    }
+
+    
+
+
+
+
+
+
+
+
+}
+
+/*end medium*/

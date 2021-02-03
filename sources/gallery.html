@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/gallery/small.css">
+    <link rel="stylesheet" href="css/gallery/medium.css">
+    <link rel="stylesheet" href="css/gallery/large.css">
+    <title>Gallery | Panahon Weather</title>
+
+</head>
+
+<body>
+
+    <section class="banner">
+        <h6>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h6>
+    </section>
+
+    <header>
+        <picture><img src="images/brand-icon.png" alt="sitemap img"></picture>
+        <ul>
+            <li class="logoText"><a href="#">Panahon <span id="weatherText">WEATHER</span></a></li>
+            <li class="logoCatchPhrase"><a href="#">Rain, rain, go away!</a></li>
+        </ul>
+
+
+
+    </header>
+
+    <nav class="clearfix">
+        <ul class="navigation">
+            <li><a class="toggleMenu" href="#">&#9776; <span id="menuText">Menu</span></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li><a href="fishHaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="gallery">
+
+            <h1>Weather Gallery</h1>
+
+            <div class="container">
+
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic1.jpg" alt="picture1">
+                    <figcaption>Studying the upcoming hailstorm.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic2.jpg" alt="picture2">
+                    <figcaption>Lightning strike while boating.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic3.jpg" alt="picture3">
+                    <figcaption>Rainy on the way home.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic4.jpg" alt="picture4">
+                    <figcaption>Geese on snow.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic5.jpg" alt="picture6">
+                    <figcaption>Clearsky view on the plane.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic6.jpg" alt="picture6">
+                    <figcaption>Melting snow on the car.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic7.jpg" alt="picture7">
+                    <figcaption>Sunny in the dessert.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic8.jpg" alt="picture8">
+                    <figcaption>Stormy afternoon.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic9.jpg" alt="picture9">
+                    <figcaption>Foggy morning.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic10.jpg" alt="picture10">
+                    <figcaption>Cloudy swimming.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic11.jpg" alt="picture11">
+                    <figcaption>Very hot climbing.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lazyPlaceholderImage.png" data-src="images/galleryPic12.jpg" alt="picture12">
+                    <figcaption>Very thick snow.</figcaption>
+                </figure>
+
+            </div>
+
+
+
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <ul>
+            <li>&#169;<span id="currentYear"></span>| | Naga City, Phil | BYU - I Online Learning</li>
+            <li>Last Updated: <span id="dateTime"></span></li>
+        </ul>
+    </footer>
+
+    <script src="script/index.js"></script>
+    <script class=responsive src="script/main.js"></script>
+    <script src="script/displayBanner.js"></script>
+    <script src="script/lazyload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Finger Paint', 'Roboto Slab', 'Open Sans', 'Cinzel', 'Poppins', 'Merriweather']
+            }
+        });
+    </script>
+
+</body>
+
+</html>
