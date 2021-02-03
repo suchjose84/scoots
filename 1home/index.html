@@ -40,8 +40,86 @@
 
     <main>
 
-        <section>
-            <h1>RESERVE A SCOOTER</h1>
+        <section class="reserveForm">
+
+            <h1>RESERVE A VEHICLE</h1>
+            <form>
+                <fieldset>
+                    <div class="inputContainer">
+                        <label class="top">PICK-UP* <input type="date" name="pickupDate"><input name="pickupTime" list="time" placeholder="Select Time"></label>
+                        <label class="top">RETURN* <input type="date" name="returnDate"><input name="returnTime" list="time" placeholder="Select Time"></label>
+                        <label class="top">RENTER AGE* <input name="renterAge" list="age" placeholder="25+"></label>
+
+                        <datalist id="time">
+                            <option value="">Please select pick-up time</option>
+                            <option value="00:00"></option>
+                            <option value="00:30"></option>
+                            <option value="01:00"></option>
+                            <option value="01:30"></option>
+                            <option value="02:00"></option>
+                            <option value="02:30"></option>
+                            <option value="03:00"></option>
+                            <option value="03:30"></option>
+                            <option value="04:00"></option>
+                            <option value="04:30"></option>
+                            <option value="05:00"></option>
+                            <option value="05:30"></option>
+                            <option value="06:00"></option>
+                            <option value="06:30"></option>
+                            <option value="07:00"></option>
+                            <option value="07:30"></option>
+                            <option value="08:00"></option>
+                            <option value="08:30"></option>
+                            <option value="09:00"></option>
+                            <option value="09:30"></option>
+                            <option value="10:00"></option>
+                            <option value="10:30"></option>
+                            <option value="11:00"></option>
+                            <option value="11:30"></option>
+                            <option value="12:00"></option>
+                            <option value="12:30"></option>
+                            <option value="13:00"></option>
+                            <option value="13:30"></option>
+                            <option value="14:00"></option>
+                            <option value="14:30"></option>
+                            <option value="15:00"></option>
+                            <option value="15:30"></option>
+                            <option value="16:00"></option>
+                            <option value="16:30"></option>
+                            <option value="17:00"></option>
+                            <option value="17:30"></option>
+                            <option value="18:00"></option>
+                            <option value="18:30"></option>
+                            <option value="19:00"></option>
+                            <option value="19:30"></option>
+                            <option value="20:00"></option>
+                            <option value="20:30"></option>
+                            <option value="21:00"></option>
+                            <option value="21:30"></option>
+                            <option value="22:00"></option>
+                            <option value="22:30"></option>
+                            <option value="23:00"></option>
+                            <option value="23:30"></option>
+                        </datalist>
+
+                        <datalist id="age">
+                            <option value="18"></option>
+                            <option value="18"></option>
+                            <option value="18"></option>
+                            <option value="18"></option>
+                            <option value="18"></option>
+                            <option value="18"></option>
+                            <option value="18"></option>
+                            <option value="18"></option>
+                        </datalist>
+
+                    </div>
+                </fieldset>
+                
+            </form>
+
+
+
         </section>
 
         <section class="heroBox">
