@@ -1,0 +1,11 @@
+img{
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+}
+
+h1{
+    color: peachpuff;
+    background-color: royalblue;
+    text-align: center;
+}
