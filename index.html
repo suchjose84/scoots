@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/home/small.css">
+    <link rel="stylesheet" href="css/home/medium.css">
+    <link rel="stylesheet" href="css/home/large.css">
+    <title>~Scoots | Home</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="index.html"><img src="images/brand-logo.png" alt="logo img"></a>
+        </div>
+        <ul>
+            <li class="logoText"><a href="index.html">~Scoots</a></li>
+            <li class="logoCatchPhrase"><a href="#">Explore the place</a></li>
+        </ul>
+
+    </header>
+
+    <nav class="clearfix">
+        <ul class="navigation">
+            <li><a class="toggleMenu" href="#">&#9776; <span id="menuText">Menu</span></a></li>
+            <li class="active"><a href="preston.html">Rentals</a></li>
+            <li><a href="sodaSprings.html">Reservations</a></li>
+            <li><a href="fishHaven.html">Tours</a></li>
+            <li><a href="stormcenter.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+
+        <section class="heroBox">
+
+            <h1>Idaho</h1>
+
+            <picture class="heroImage">
+
+                <source srcset="images/Homehero500.jpg" media="(max-width: 500px)">
+                <source srcset="images/Homehero800.jpg" media="(max-width: 800px)">
+                <source srcset="images/Homehero1100.jpg" media="(min-width: 801px)">
+                <img src="images/lazyPlaceholderImage.png" alt="cactusImage">
+
+            </picture>
+
+        </section>
+
+        <section class="townbox">
+
+            <h2>The Towns</h2>
+
+            <div class="card"></div>
+
+        </section>
+
+
+        <section class="articleBox">
+            <div class="articleContents">
+                <img src="images/lazyPlaceholderImage.png" data-src="images/9space.jpg" alt="articlePic">
+                <h2>The Upside of Volatile Space Weather</h2>
+                <p class="author">Source: Northwestern University</p>
+                <p class="hasDropCap">Although violent and unpredictable, stellar flares emitted by a planet's host star
+                    do not
+                    necessarily prevent life from forming, according to a new Northwestern University study. Emitted by
+                    stars, stellar flares are sudden flashes of magnetic imagery. On Earth, the sun's flares
+                    sometimes damage satellites and disrupt radio communications. Elsewhere in the universe, robust
+                    stellar flares also have the ability to deplete and destroy atmospheric gases, such as ozone.
+                    Without the ozone, harmful levels of ultraviolet (UV) radiation can penetrate a planet's atmosphere,
+                    thereby diminishing its chances of harboring surface life...
+                    <br>
+                    <a id="nextPageLink" href="https://www.google.com/" target="_blank">continue to full article</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="locationSection">
+
+            <div class="mapBox">
+                <img src="images/lazyPlaceholderImage.png" data-src="images/prestonMap.jpg" alt="prestonMapImage">
+
+            </div>
+            <div class="addressBox">
+                <div class="address">
+                    <h5>Panahon Weather</h5>
+                    <p><img src="images/lazyPlaceholderImage.png" data-src="images/locationIcon9.png"
+                            alt="locationIcon">
+                        30 N 1st E</p>
+                    <p>Preston, ID 83263</p>
+                    <br>
+                    <p><span id="phoneIcon">&#9742;</span> (999)-999-9999</p>
+                    <p><span id="envelopeIcon">&#9993;</span> pwmail@panahonweather.com</p>
+                    <br>
+                    <div class="social">
+                        <a href="https://facebook.com" target="_blank"><img src="images/lazyPlaceholderImage.png"
+                                data-src="images/fbIcon.png" alt="fbIcon"></a>
+                        <a href="https://pinterest.com" target="_blank"><img src="images/lazyPlaceholderImage.png"
+                                data-src="images/pinterestIcon.png" alt="pinterestIcon"></a>
+                        <a href="https://twitter.com" target="_blank"><img src="images/lazyPlaceholderImage.png"
+                                data-src="images/twitterIcon.png" alt="twitterIcon"></a>
+                        <a href="https://hangouts.google.com/" target="_blank"><img
+                                src="images/lazyPlaceholderImage.png" data-src="images/hangoutsIcon.png"
+                                alt="hangoutsIcon">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <ul>
+            <li>&#169;<span id="currentYear"></span>| Naga City, Phil | BYU - I Online Learning | <a
+                    href="home-wireframes.html" target="_blank">Blueprint</a></li>
+            <li>Last Updated: <span id="dateTime"></span></li>
+        </ul>
+    </footer>
+
+
+    <script src="script/townsData.js"></script>
+    <script src="script/index.js"></script>
+    <script class=responsive src="script/main.js"></script>
+    <script src="script/displayBanner.js"></script>
+    <script src="script/lazyload.js"></script>
+
+
+
+    <!--Google Webfont-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Finger Paint', 'Roboto Slab', 'Open Sans', 'Cinzel', 'Poppins', 'Merriweather']
+            }
+        });
+    </script>
+
+</body>
+
+</html>
