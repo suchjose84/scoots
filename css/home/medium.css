@@ -46,13 +46,55 @@
         display: none;
     }
 
-    /*Town Section */
 
-    main .townbox{
-        width: 96%;
+    /* Weather Summary Section */
+
+    main .summaryBox {
+        top: 30px;
+        left: 50px;
     }
 
-    main .townbox .card article{
+    main .summaryBox p {
+        margin: 0 0 15px 0;
+        font-size: 1.5rem;
+    }
+
+    main .summaryBox table {
+        font-size: 1rem;
+    }
+
+
+    /*Forecast Section */
+
+    main .weatherSection {
+        display: block;
+    }
+
+    /* Article Section */
+
+    main .articleBox {
+        width: 96%;
+        margin: 1.5rem auto;
+    }
+
+    main .articleBox h3 {
+        margin-top: 0px;
+    }
+
+    main .articleBox img {
+        float: right;
+        max-width: 230px;
+    }
+
+    /*Event Section */
+
+    main .eventbox .card{
+        max-width: 80%;
+        margin: 0 auto;
+        grid-gap: 1rem;
+    }
+
+    main .eventbox .card article{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: .5rem;
@@ -70,26 +112,16 @@
 
     }
 
-
-    /* Article Section */
-
-    main .townbox{
-        width: 80%;
-    
+    main .eventBox .card p {
+        font-size: 1rem;
+        
     }
 
-    main .articleBox {
-        width: 76%;
+    main .heroBox .card img{
+        width: 100%;
+        
     }
 
-    main .articleBox h3 {
-        margin-top: 0px;
-    }
-
-    main .articleBox img {
-        float: right;
-        max-width: 230px;
-    }
 
 
     /* Map Section */
@@ -97,7 +129,7 @@
     .locationSection {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width: 80%;
+        width: 96%;
         margin: 0 auto;
     }
     .locationSection .mapBox{

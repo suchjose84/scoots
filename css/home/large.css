@@ -10,46 +10,45 @@
 
     /* Main Page */
 
-    /*Town Section */
 
-    main .townbox .card{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    /* Weather Summary Section */
 
+
+    main .summaryBox table {
+        font-size: 1.2rem;
     }
 
-    main .townbox .card article{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+
+    /* 5-Day Forecast Section */
+
+    .forecastBox {
+        max-width: 700px;
     }
-
-    article:nth-child(odd) img{
-        grid-row: 2
-
-    }
-    article:nth-child(odd) .cardData{
-        grid-row: 1;
-
-    }
-
 
     /* Article Section */
-
     main .articleBox {
-        width: 76%;
+        width: 70%;
     }
 
-    main .townbox{
-        width: 80%;
-    
+    main .articleBox img {
+        max-width: 280px;
+    }
+
+    /* Events Section*/
+
+    main .eventBox {
+        width: 70%;
+    }
+
+    main .eventBox .card p {
+        font-size: 1.2rem;
+        
     }
 
     /* Map Section */
 
-    .locationContent {
-        width: 80%;
+    .locationSection {
+        width: 70%;
     }
     
 
