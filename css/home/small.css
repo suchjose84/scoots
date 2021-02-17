@@ -7,15 +7,17 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto Slab', serif;
 font-family: 'Merriweather', serif;
+font-family: 'Acme', sans-serif;
+font-family: 'Lexend Mega', sans-serif;
 */
 
 /*
 COLORS
-Primary - #666600 - rgb(102,102,0) - dark yellow - background
-Primary - #F5F5DC - rgb(245,245,220) - beige - background
+Primary - #77A6F7 - rgb(119, 166, 247) - Sky Blue - background
+Primary - #FFFFFF - rgb(255,255,255) - white - background
 Primary - #333333 - rgb(51,51,51) - lighter black - paragraph font color
-Secondary - #00BFFF - rgb(0, 191, 255) - light sky blue - for text in logo
-Secondary - #bdb76b - rgb(189, 183, 107) - nav color
+Secondary - #00887A - rgb(0, 136, 122) - green - nav color
+Secondary - #FFCCBC - rgb(189, 183, 107) - nav color
 Secondary - #666600 - rgb(255,255,0) - yellow - for footer contrast
 
 ********************************************************************/
@@ -32,7 +34,7 @@ li a {
 }
 
 body {
-    background-color: rgb(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, 1);
     /*background-color: #F5F5DC; */
     font-family: 'Open Sans', sans-serif;
 }
@@ -40,7 +42,7 @@ body {
 /*Banner CSS */
 
 .banner {
-    background-color: rgb(255, 255, 0, .5);
+    background-color: rgba(255, 255, 0, .5);
     display: none;
     font-size: .8rem;
     padding: 3px;
@@ -57,7 +59,8 @@ body {
 header {
     display: flex;
     justify-content: center;
-    background-color: #666600;
+    background-color: rgb(119, 166, 247);
+    padding: .5rem;
 }
 
 header div {
@@ -65,7 +68,7 @@ header div {
 }
 
 header img {
-    max-width: 100%;
+    max-width: 80%;
 }
 
 header ul {
@@ -81,28 +84,30 @@ header ul {
 
 header ul li a {
     text-decoration: none;
-    color: white;
     text-align: center;
+    color: #333333;
+    
 }
 
 header ul li:nth-child(1) {
-    font-family: 'Finger Paint', cursive;
+    font-family: 'Lexend Mega', sans-serif;
     font-size: 1.6rem;
-}
-
-header ul li:nth-child(1) #weatherText {
-    color: #00BFFF;
+    
 }
 
 header ul li:nth-child(2) {
     font-size: .8rem;
 }
 
+header ul li:nth-child(2) a {
+    color: white;
+}
+
 
 /*Navigation CSS */
 
 nav {
-    background-color: #BDB76B;
+    background-color: #00887A;
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -164,6 +169,9 @@ nav ul li a:hover {
 main {
     color: #333333;
 }
+main section {
+    margin-bottom: .2rem;
+}
 
 main h2,
 h3,
@@ -176,41 +184,44 @@ h1 {
 /*Hero Pic and Summary Section */
 
 main .heroBox {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     width: 100%;
-    margin: 2rem 0;
-
 }
-
 main .heroImage img {
     width: 100%;
+    height: 100%;
     display: block;
     margin: 0 auto;
 
 }
 
 main .heroSummary {
-    padding: 2rem;
-    background-color: rgba(65, 105, 225, .5);
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    background-color: rgb(211, 227, 252);
 }
 
-main .heroSummary h1,
+main .heroSummary h2,
 p,
 a {
     text-align: left;
+}
+main .heroSummary h2 {
+    margin: 0;
 }
 
 main .heroSummary a {
     text-decoration: none;
     color: rgba(0, 0, 0, 1);
     padding: .5rem;
-    background-color: rgb(255, 218, 185);
+    background-color: rgb(119, 166, 247);
     font-weight: bold;
     border-radius: 5px;
 }
 
 main .heroSummary a:hover {
-    background-color: rgba(255, 218, 185, .7);
+    background-color: rgba(119, 166, 247, .7);
 }
 
 main .heroSummary p {
@@ -219,79 +230,247 @@ main .heroSummary p {
 
 /*Weather Summary and Forecast Section */
 
-main .weatherSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border: 1px solid black;
-    width: 80%;
+.weatherSection {
+    display: grid;
+    background-color: rgba(255, 204, 188, .8);
+    grid-template-columns: 1fr;
+    width: 96%;
+    color: rgba(0, 0, 0, .8);
+    padding: 1rem 2% 1.5rem 2%;
 
 }
 
 .weatherSummary {
-    border: 1px solid blue;
-    width: 30%;
-}
-.weatherSummary ul{
-    width: 100%;
-    border: 1px red solid;
-
-}
-.weatherSummary li {
-    width: 100%;
-    border: 1px solid red;
+    margin-bottom: 1.5rem;
 }
 
-.weatherSummary li:nth-child(1) {
-    color: rgba(255,99,71, .9);
+.weatherSummary p{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.weatherSummary p:nth-child(1) {
+    color: rgb(0, 136, 122);
     font-size: .9rem;
+    font-weight: 650;
+    margin: 1.5 0 1rem 0;
 }
 
-.weatherSummary li:nth-child(2) {
-    font-size: 1.5rem;
+.weatherSummary p:nth-child(2) {
+    font-size: 1.3rem;
     font-weight: 800;
 
 }
 
-.weatherSummary li:nth-child(3) {
-    margin: 2.3rem 0 2rem 0;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    font-size: 2.3rem;
+.weatherSummary p:nth-child(3) {
+    margin: 0 auto;
+    text-align: left;
+    font-size: 2.7rem;
     font-weight: 400;
+    margin: 1rem 0 .8rem 0
 }
 
-.weatherSummary li:nth-child(3) img{
-    height: 3rem;
-    border: 1px solid red;
+.weatherSummary p:nth-child(3) img{
+    height: 2.3rem;
+}
+
+.weatherSummary p:nth-child(4) {
+    font-size: .9rem;
+}
+
+.weatherSummary p:nth-child(5) {
+    font-size: .8rem;
 }
 
 .forecastBox {
-    display: flex;
+    width: 100%;
+    display: block;
     flex-direction: column;
-    border: solid red;
-    grid-row: 2 / 3;
 }
 
-.forecastBox .weatherCard {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+.forecastBox .forecastTable tr{
+    margin: 0px;
     padding: 0px;
-    margin-right: 5px;
+    font-size: .8rem;
 }
 
-.weatherSection .weatherImage{
-    width: 30%;
-    border: 1px solid green;
+#icon1, #icon2, #icon3 {
+    max-height: 1.3rem;
 }
 
-.weatherSection .weatherImage img{
+.forecastBox h4{
+    text-align: left;
+    margin: 0;
+}
+
+.forecastBox .forecastTable tr:nth-child(4){
+    display: none;
+}
+
+.forecastBox .forecastTable tr:nth-child(5){
+    display: none;
+}
+
+.weatherImage{
+    display: none;
     width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+.weatherImage img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    opacity: .8;
+}
+
+/*Article Section */
+
+main .articleBox {
+    width: 94%;
+    display: block;
+    background-color: rgba(0, 136, 122, .2);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 2%;
+    margin: 0 auto .2rem auto;
+    
+}
+
+main .articleBox img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+main .articleBox h2 {
+    text-align: left;
+    font-family: 'Merriweather', serif;
+}
+
+.hasDropCap:first-letter {
+    font-size: 2.5rem;
+    float: left;
+    margin: 0.21em 0.22em 0.1em 0;
+    line-height: .65em;
+    font-family: 'Merriweather', serif;
+
+}
+
+.hasDropCap p {
+    text-align: left;
+
+}
+
+main .author {
+    font-size: .8rem;
+    font-style: italic;
+    
+}
+
+main .hasDropCap a{
+    color: blue;
+}
+main .hasDropCap a:hover{
+    color: green;
+}
+
+/* Rental Box */
+
+main .rentalBox{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 136, 122, .2);
+    width: 98%;
+    margin: 0 auto .2rem auto;
+
+}
+
+main .rentalBox .card article{
+    display: block;
+    width: 85%;
+    background-color: rgba(255, 204, 188, .5);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: .5rem auto;
+    border-radius: 3px;
+    padding: 1rem;
+    
+
+}
+
+main .rentalBox .card h3{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+}
+
+main .rentalBox .card h5{
+    text-align: center;
+    color: rgba(72, 61, 139);
+    font-family: 'Finger Paint', cursive;
+}
+
+main .rentalBox .card p{
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 600;
+    margin: auto;
+    
+}
+
+main .rentalBox .card img{
+    display: block;
+    width: 95%;
+    margin: 1rem auto auto auto;
+    box-shadow: 0 0 10px;
+    border-style: inset;
+}
+
+
+
+/* Address Section */
+
+.locationSection {
+    background-color: rgb(102, 102, 0, .3);
+    width: 94%;
+    margin: 0 auto;
+    padding: 1rem 3%;
+}
+
+.locationSection .mapBox img {
+    display: none;
+}
+
+.locationSection .addressBox {
+    display: block;
+}
+
+.locationSection .addressBox h5 {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.locationSection .addressBox p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.locationSection .addressBox img {
+    max-height: 1.1rem;
+}
+
+.locationSection .addressbox picture img {
+    max-width: 1.5rem;
+
+}
+
+.locationSection .address {
+    display: block;
+    margin: auto;
+
 }
 
 

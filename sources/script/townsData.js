@@ -7,7 +7,7 @@ fetch(requestURL)
   .then(function (jsonObject) {
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     const towns = jsonObject['towns']
-    let townImages = ["images/9springfield.jpg", "images/9fishHaven.jpg", "images/9franklin.jpg", "images/9greenville.jpg", "images/9placerton.jpg", "images/9preston.jpg", "images/9sodaSprings.jpg"];
+    
     for (let i = 0; i < towns.length; i++) {
       
       let card = document.createElement('article');

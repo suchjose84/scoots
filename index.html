@@ -22,7 +22,7 @@
         </div>
         <ul>
             <li class="logoText"><a href="index.html">~Scoots</a></li>
-            <li class="logoCatchPhrase"><a href="#">Explore the place</a></li>
+            <li class="logoCatchPhrase"><a href="index.html">Explore the place</a></li>
         </ul>
 
     </header>
@@ -43,74 +43,144 @@
 
         <section class="heroBox">
 
-
             <picture class="heroImage">
 
                 <source srcset="images/heroImage-500.jpg" media="(max-width: 500px)">
                 <source srcset="images/heroImage-800.jpg" media="(max-width: 800px)">
                 <source srcset="images/heroImage-1100.jpg" media="(min-width: 801px)">
                 <img src="images/lazyPlaceholderImage.png" alt="heroImage">
+
             </picture>
 
             <div class="heroSummary">
-                <h1>STRENGTHENING OUR PLEDGE</h1>
-                <p>Enhancing the safety of customers and employees is our top priority. We are pleased to collaborate
-                    with Clorox®, one of the most trusted brands for powerful cleaning, and extend our Complete Clean
+                <h2>STRENGTHENING OUR PLEDGE</h2>
+                <p>Enhancing the safety of customers and employees is our top priority. We are pleased to
+                    collaborate
+                    with Clorox®, one of the most trusted brands for powerful cleaning, and extend our Complete
+                    Clean
                     Pledge.
                 </p>
                 <a href="stormcenter.html">Reserve a vehicle now</a>
             </div>
 
+
         </section>
 
         <section class="weatherSection">
 
+
             <div class="weatherSummary">
-                <ul>
-                    <li><span id="dateTime"></span></li>
-                    <li><span id="city"></span>, <span id="country"></span></li>
-                    <li><img id="weatherImg" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic"><span
-                            id="temp"></span></li>
-                    <li>Feels like <span id="feelsLike"></span>. <span id="description"></span>. <span
-                            id="windClass"></span>.</li>
-                    <li><span id=""></span></li>
 
-                </ul>
-            </div>
+                <p><span id="dateTime"></span></p>
+                <p><span id="city"></span>, <span id="country"></span></p>
+                <p><img id="weatherImg" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic"><span
+                        id="temp"></span></p>
+                <p><span id="feelsLike"></span>. <span id="description"></span>. <span id="windClass"></span>.</p>
+                <p><span id="windValue"></span><span id="pressure"></span><span id="humidity"></span></p>
 
-            <div class="forecastBox">
-                <div class="weatherCard">
-                    <p class="firstP"><span id="day1"></span></p>
-                    <img id="icon1" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
-                    <p class="secondP"><span id=temp1></span>&#8457;</p>
-                </div>
-                <div class="weatherCard">
-                    <p class="firstP"><span id="day2"></span></p>
-                    <img id="icon2" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
-                    <p class="secondP"><span id=temp2></span>&#8457;</p>
-                </div>
-                <div class="weatherCard">
-                    <p class="firstP"><span id="day3"></span></p>
-                    <img id="icon3" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
-                    <p class="secondP"><span id=temp3></span>&#8457;</p>
-                </div>
-                <div class="weatherCard">
-                    <p class="firstP"><span id="day4"></span></p>
-                    <img id="icon4" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
-                    <p class="secondP"><span id=temp4></span>&#8457;</p>
-                </div>
-                <div class="weatherCard">
-                    <p class="firstP"><span id="day5"></span></p>
-                    <img id="icon5" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic">
-                    <p class="secondP"><span id=temp5></span>&#8457;</p>
-                </div>
             </div>
 
             <div class="weatherImage">
-                <picture>
-                    <img src="images/cozumel-map.jpg" alt="">
-                </picture>
+                <img src="images/lazyPlaceholderImage.png" data-src="images/cozumel-map.jpg" alt="">
             </div>
+
+            <div class="forecastBox">
+                <h4>3-Day Forecast</h4>
+                <table class="forecastTable">
+                    <tr>
+                        <td class="firstColumn"><span id="day1"></span></td>
+                        <td class="secondColumn"><img id="icon1" src="images/lazyPlaceholderImage.png" data-src=""
+                                alt="weatherPic"></td>
+                        <td class="thirdColumn"><span id="temp1"></span></td>
+                        <td class="fourthColumn"><span id="desc1"></span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstColumn"><span id="day2"></span></td>
+                        <td class="secondColumn"><img id="icon2" src="images/lazyPlaceholderImage.png" data-src=""
+                                alt="weatherPic"></td>
+                        <td class="thirdColumn"><span id="temp2"></span></td>
+                        <td class="fourthColumn"><span id="desc2"></span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstColumn"><span id="day3"></span></td>
+                        <td class="secondColumn"><img id="icon3" src="images/lazyPlaceholderImage.png" data-src=""
+                                alt="weatherPic"></td>
+                        <td class="thirdColumn"><span id="temp3"></span></td>
+                        <td class="fourthColumn"><span id="desc3"></span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstColumn"><span id="day4"></span></td>
+                        <td class="secondColumn"><img id="icon4" src="images/lazyPlaceholderImage.png" data-src=""
+                                alt="weatherPic"></td>
+                        <td class="thirdColumn"><span id="temp4"></span></td>
+                        <td class="fourthColumn"><span id="desc4"></span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="firstColumn"><span id="day5"></span></td>
+                        <td class="secondColumn"><img id="icon5" src="images/lazyPlaceholderImage.png" data-src=""
+                                alt="weatherPic"></td>
+                        <td class="thirdColumn"><span id="temp5"></span></td>
+                        <td class="fourthColumn"><span id="desc5"></span></span></td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </section>
+
+        <section class="articleBox">
+            <h2>Business Summary</h2>
+            <p>Scoots is a vehicle rental company wholly owned by Jose H. Such. We at Scoots are committed in providing
+                our customers, especially tourists an enjoyable experience here in Cozumel by providing transportation
+                thru our rental service. Our services include MOTORCYCLE, ATV, and JEEP rentals which will accommodate
+                all of your transportation needs as you tour the island. We provide affordable and flexible rates and we
+                are close to the ferry pier Cozumel- Playa del Carmen. We also have locations close to all the cruise
+                ports. Don’t worry if your cruise changes its port of arrival.
+            </p>
+        </section>
+
+        <section class="rentalBox">
+
+            <h2>Rental Types</h2>
+
+            <div class="card"></div>
+
+        </section>
+
+        <section class="locationSection">
+
+            <div class="mapBox">
+                <img src="images/lazyPlaceholderImage.png" data-src="images/scoots-map.png" alt="scootsMapImage">
+
+            </div>
+            <div class="addressBox">
+                <div class="address">
+                    <h5>Contact Us</h5>
+                    <p><img src="images/lazyPlaceholderImage.png" data-src="images/locationIcon9.png"
+                            alt="locationIcon">
+                        5ta. Avenida norte Entre calle 2 norte, Calle 4 Nte y, Centro, 77600 San Miguel de Cozumel,
+                        Q.R., Mexico
+                    </p>
+                    <br>
+                    <p><span id="phoneIcon">&#9742;</span> +52(987)-869-3097</p>
+                    <p><span id="envelopeIcon">&#9993;</span> mail@scootsrental.com</p>
+                    <br>
+                </div>
+                <div class="social">
+                    <a href="https://facebook.com" target="_blank"><img src="images/lazyPlaceholderImage.png"
+                            data-src="images/fbIcon.png" alt="fbIcon"></a>
+                    <a href="https://pinterest.com" target="_blank"><img src="images/lazyPlaceholderImage.png"
+                            data-src="images/pinterestIcon.png" alt="pinterestIcon"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/lazyPlaceholderImage.png"
+                            data-src="images/twitterIcon.png" alt="twitterIcon"></a>
+                    <a href="https://hangouts.google.com/" target="_blank"><img src="images/lazyPlaceholderImage.png"
+                            data-src="images/hangoutsIcon.png" alt="hangoutsIcon">
+                    </a>
+                </div>
+
+            </div>
+
+
 
         </section>
 
@@ -121,16 +191,18 @@
         <ul>
             <li>&#169;<span id="currentYear"></span>| Naga City, Phil | BYU - I Online Learning | <a
                     href="home-wireframes.html" target="_blank">Blueprint</a></li>
-            <li>Last Updated: <span id="dateTime"></span></li>
+            <li>Last Updated: <span id="dateTime2"></span></li>
         </ul>
     </footer>
 
 
-    <script src="script/index.js"></script>
+    <script src="script/dateTime.js"></script>
     <script class=responsive src="script/main.js"></script>
     <script src="script/displayBanner.js"></script>
     <script src="script/Cozweatherapi.js"></script>
+    <script src="script/rentals.js"></script>
     <script src="script/lazyload.js"></script>
+
 
 
 
@@ -139,7 +211,9 @@
     <script>
         WebFont.load({
             google: {
-                families: ['Finger Paint', 'Roboto Slab', 'Open Sans', 'Cinzel', 'Poppins', 'Merriweather']
+                families: ['Finger Paint', 'Roboto Slab', 'Open Sans', 'Cinzel', 'Poppins', 'Merriweather',
+                    'Acme', 'Lexend Mega'
+                ]
             }
         });
     </script>

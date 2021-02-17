@@ -27,9 +27,23 @@ let d = new Date();
 let dayName = days[d.getDay()];
 let monthName = months[d.getMonth()];
 let year = d.getFullYear();
+
+let hrs = d.getHours();
+
+if (hrs < 10) {
+    hrs = "0" + hrs.toString();
+}
+
+let minutes = d.getMinutes();
+
+if (minutes < 10) {
+    minutes = "0" + minutes.toString();
+}
+
+
 let fullDate = dayName + ", " + monthName + " " + d.getDate() + ", " + year + " " + 
-d.getHours() + ":" + d.getMinutes();
+hrs + ":" + minutes;
 
 
 document.getElementById("currentYear").textContent = " " + year + " ";
-document.getElementById("dateTime").textContent = fullDate;
+document.getElementById("dateTime2").textContent = fullDate;

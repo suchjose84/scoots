@@ -1,0 +1,28 @@
+{
+    "rentals": [
+      {
+        "vehicleType": "SCOOTER",
+        "brand": "Honda",
+        "motto": "Lightweight",
+        "capacity": "1-2",
+        "price": "20$ to 55$",
+        "imageurl": "images/hondaScooter.jpg"
+      },
+      {
+        "vehicleType": "ATV",
+        "vehicleBrand": "Honda",
+        "motto": "Off-road",
+        "capacity": "4",
+        "price": "40$ to 80$",
+        "imageurl": "images/hondaATV.jpg"
+      },
+      {
+        "vehicleType": "JEEP",
+        "vehicleBrand": "Wrangler",
+        "motto": "Versatility",
+        "capacity": "4-5",
+        "price": "60$ to 125$",
+        "imageurl": "images/wranglerJeep.jpg"
+      }
+    ]
+  }
