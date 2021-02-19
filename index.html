@@ -30,11 +30,11 @@
     <nav class="clearfix">
         <ul class="navigation">
             <li><a class="toggleMenu" href="#">&#9776; <span id="menuText">Menu</span></a></li>
-            <li class="active"><a href="stormcenter.html">Home</a></li>
-            <li><a href="preston.html">Rentals</a></li>
-            <li><a href="sodaSprings.html">Reservations</a></li>
-            <li><a href="fishHaven.html">Tours</a></li>
-            <li><a href="stormcenter.html">Contact</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -68,75 +68,88 @@
 
         <section class="weatherSection">
 
+            <div class="weatherBox">
+                <div class="weatherSummary">
 
-            <div class="weatherSummary">
+                    <p><span id="dateTime"></span></p>
+                    <p><span id="city"></span>, <span id="country"></span></p>
+                    <p><img id="weatherImg" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic"><span
+                            id="temp"></span></p>
+                    <p><span id="feelsLike"></span>. <span id="description"></span>. <span id="windClass"></span>.</p>
+                    <p><span id="windValue"></span><span id="pressure"></span><span id="humidity"></span></p>
 
-                <p><span id="dateTime"></span></p>
-                <p><span id="city"></span>, <span id="country"></span></p>
-                <p><img id="weatherImg" src="images/lazyPlaceholderImage.png" data-src="" alt="weatherPic"><span
-                        id="temp"></span></p>
-                <p><span id="feelsLike"></span>. <span id="description"></span>. <span id="windClass"></span>.</p>
-                <p><span id="windValue"></span><span id="pressure"></span><span id="humidity"></span></p>
+                </div>
 
+                <div class="forecastBox">
+                    <h4>3-Day Forecast</h4>
+                    <table class="forecastTable">
+                        <tr>
+                            <td class="firstColumn"><span id="day1"></span></td>
+                            <td class="secondColumn"><img id="icon1" src="images/lazyPlaceholderImage.png" data-src=""
+                                    alt="weatherPic"></td>
+                            <td class="thirdColumn"><span id="temp1"></span></td>
+                            <td class="fourthColumn"><span id="desc1"></span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="firstColumn"><span id="day2"></span></td>
+                            <td class="secondColumn"><img id="icon2" src="images/lazyPlaceholderImage.png" data-src=""
+                                    alt="weatherPic"></td>
+                            <td class="thirdColumn"><span id="temp2"></span></td>
+                            <td class="fourthColumn"><span id="desc2"></span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="firstColumn"><span id="day3"></span></td>
+                            <td class="secondColumn"><img id="icon3" src="images/lazyPlaceholderImage.png" data-src=""
+                                    alt="weatherPic"></td>
+                            <td class="thirdColumn"><span id="temp3"></span></td>
+                            <td class="fourthColumn"><span id="desc3"></span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="firstColumn"><span id="day4"></span></td>
+                            <td class="secondColumn"><img id="icon4" src="images/lazyPlaceholderImage.png" data-src=""
+                                    alt="weatherPic"></td>
+                            <td class="thirdColumn"><span id="temp4"></span></td>
+                            <td class="fourthColumn"><span id="desc4"></span></span></td>
+                        </tr>
+                        <tr>
+                            <td class="firstColumn"><span id="day5"></span></td>
+                            <td class="secondColumn"><img id="icon5" src="images/lazyPlaceholderImage.png" data-src=""
+                                    alt="weatherPic"></td>
+                            <td class="thirdColumn"><span id="temp5"></span></td>
+                            <td class="fourthColumn"><span id="desc5"></span></span></td>
+                        </tr>
+                    </table>
+
+                </div>
+                
             </div>
-
             <div class="weatherImage">
                 <img src="images/lazyPlaceholderImage.png" data-src="images/cozumel-map.jpg" alt="">
             </div>
 
-            <div class="forecastBox">
-                <h4>3-Day Forecast</h4>
-                <table class="forecastTable">
-                    <tr>
-                        <td class="firstColumn"><span id="day1"></span></td>
-                        <td class="secondColumn"><img id="icon1" src="images/lazyPlaceholderImage.png" data-src=""
-                                alt="weatherPic"></td>
-                        <td class="thirdColumn"><span id="temp1"></span></td>
-                        <td class="fourthColumn"><span id="desc1"></span></span></td>
-                    </tr>
-                    <tr>
-                        <td class="firstColumn"><span id="day2"></span></td>
-                        <td class="secondColumn"><img id="icon2" src="images/lazyPlaceholderImage.png" data-src=""
-                                alt="weatherPic"></td>
-                        <td class="thirdColumn"><span id="temp2"></span></td>
-                        <td class="fourthColumn"><span id="desc2"></span></span></td>
-                    </tr>
-                    <tr>
-                        <td class="firstColumn"><span id="day3"></span></td>
-                        <td class="secondColumn"><img id="icon3" src="images/lazyPlaceholderImage.png" data-src=""
-                                alt="weatherPic"></td>
-                        <td class="thirdColumn"><span id="temp3"></span></td>
-                        <td class="fourthColumn"><span id="desc3"></span></span></td>
-                    </tr>
-                    <tr>
-                        <td class="firstColumn"><span id="day4"></span></td>
-                        <td class="secondColumn"><img id="icon4" src="images/lazyPlaceholderImage.png" data-src=""
-                                alt="weatherPic"></td>
-                        <td class="thirdColumn"><span id="temp4"></span></td>
-                        <td class="fourthColumn"><span id="desc4"></span></span></td>
-                    </tr>
-                    <tr>
-                        <td class="firstColumn"><span id="day5"></span></td>
-                        <td class="secondColumn"><img id="icon5" src="images/lazyPlaceholderImage.png" data-src=""
-                                alt="weatherPic"></td>
-                        <td class="thirdColumn"><span id="temp5"></span></td>
-                        <td class="fourthColumn"><span id="desc5"></span></span></td>
-                    </tr>
-                </table>
 
-            </div>
+            
+
 
         </section>
 
         <section class="articleBox">
-            <h2>Business Summary</h2>
-            <p>Scoots is a vehicle rental company wholly owned by Jose H. Such. We at Scoots are committed in providing
-                our customers, especially tourists an enjoyable experience here in Cozumel by providing transportation
-                thru our rental service. Our services include MOTORCYCLE, ATV, and JEEP rentals which will accommodate
-                all of your transportation needs as you tour the island. We provide affordable and flexible rates and we
-                are close to the ferry pier Cozumel- Playa del Carmen. We also have locations close to all the cruise
-                ports. Don’t worry if your cruise changes its port of arrival.
-            </p>
+            <div class="articleContents">
+                <img src="images/lazyPlaceholderImage.png" data-src="images/article-image-600.jpg" alt="articlePic">
+                <h2>Business Summary</h2>
+                <p class="hasDropCap">Scoots is a vehicle rental company wholly owned by Jose H. Such. We at Scoots are
+                    committed in providing
+                    our customers, especially tourists an enjoyable experience here in Cozumel by providing
+                    transportation
+                    thru our rental service. Our services include MOTORCYCLE, ATV, and JEEP rentals which will
+                    accommodate
+                    all of your transportation needs as you tour the island. We provide affordable and flexible rates
+                    and we
+                    are close to the ferry pier Cozumel- Playa del Carmen. We also have locations close to all the
+                    cruise
+                    ports. Don’t worry if your cruise changes its port of arrival.
+                </p>
+            </div>
         </section>
 
         <section class="rentalBox">

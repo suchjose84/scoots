@@ -10,7 +10,7 @@
       },
       {
         "vehicleType": "ATV",
-        "vehicleBrand": "Honda",
+        "brand": "Honda",
         "motto": "Off-road",
         "capacity": "4",
         "price": "40$ to 80$",
@@ -18,7 +18,7 @@
       },
       {
         "vehicleType": "JEEP",
-        "vehicleBrand": "Wrangler",
+        "brand": "Wrangler",
         "motto": "Versatility",
         "capacity": "4-5",
         "price": "60$ to 125$",
